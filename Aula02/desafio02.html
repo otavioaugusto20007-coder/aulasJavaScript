@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Otávio Augusto">
+    <title>DESAFIO 01 - JAVASCRIPT</title>
+    <link rel="icon" type="image/ico" href="https://www.macan-porsche.com.br/img/favicon.ico">
+    
+ 
+</head>
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark>DO HTML ATRAVÉS</h1>
+    <hr>
+    <div>
+    <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+    <hr>
+    <p>Aprender é Muito Legal</p>
+    <p>E para ajuadr o aprendizdo, é PRECISO praticar e exercitar</p>
+    </div>
+
+    <div>
+        <img src="img/subzero.jpg" alt="mortalkombat">
+    </div>
+
+    <script>
+        const tag_div = document.getElementsByTagName('div');
+
+        tag_div.style.border ="1px";
+        tag_div.style.borderColor = "red";
+        tag_div.style.borderStyle = "solid";
+
+        const tag_img_1 = document.getElementsByTagName('img');
+        tag_img_1[0].src = "img/scorpion.jpg";
+        tag_img_1[0].title ="Subzero";
+
+    </script>
+
+</body>
+</html>
