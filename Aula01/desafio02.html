@@ -6,7 +6,7 @@
     <meta name="description" content="...">
     <meta name="keywords" content="sites, web">
     <meta name="author" content="Otávio Augusto">
-    <title>EXECÍCIO 04 - JAVASCRIPT</title>
+    <title>DESFIO 01 - JAVASCRIPT</title>
     <link rel="icon" type="image/ico" href="https://www.macan-porsche.com.br/img/favicon.ico">
     
  
@@ -14,14 +14,18 @@
 
 </head>
 <body>
-    <h1>Integrando os recursos de interatividade do JS</h1>
+     <h1>Solicitando informações para o usúario:PROMPT</h1>
     <hr>
     <script>
         window.alert("Seja bem-vindo ao site");
-        let nome = window.prompt("Qual é seu nome?");
-        window.alert(nome);
-        console.log(nome);
-        let resposta = window.confirm("Voce deseja sair da página?");
+        let n1 = window.prompt("digite o primeiro 1°");
+        let n2 = window.prompt("digite o  segundo 2°");
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        let op = window.prompt("Operação do resultado");
+
+        let resposta = window.confirm("Confirme resultado");
         console.log(resposta);
     </script>
 

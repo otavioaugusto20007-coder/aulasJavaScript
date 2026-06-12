@@ -14,21 +14,28 @@
 
 </head>
 <body>
-     <h1>Solicitando informações para o usúario:PROMPT</h1>
+    <h1>OLÁ MUNDO EM JS: <mark>ALERT</mark></h1>
     <hr>
     <script>
-        window.alert("Seja bem-vindo ao site");
-        let n1 = window.prompt("digite o primeiro 1°");
-        let n2 = window.prompt("digite o  segundo 2°");
-        n1 = parseInt(n1);
-        n2 = parseInt(n2);
+        window.alert("Seja bem-vindo ao site ");
+        let num1 = window.prompt("Solicite o primeiro número: ");
+        num1 = parseInt(num1);
 
-        let op = window.prompt("Operação do resultado");
+        let num2 = window.prompt("Solicite o segundo número: ");
+        num2 = parseInt(num2);
 
-        let resposta = window.confirm("Confirme resultado");
-        console.log(resposta);
+        let op = window.prompt("Qual tipo de operação? ")
+
+        num1 = parseInt(num1)
+        num2 =  parseInt(num2)
+        let resultado = 0
+        if (op=="+"){
+            resultado = num1 + num2
+        }else{
+            resultado = num1 - num2
+        }
+        window.alert(resultado)     
     </script>
-
     
 </body>
 </html>
