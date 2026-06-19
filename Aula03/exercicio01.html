@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Otávio Augusto">
+    <title>EXECÍCIO 01 - JAVASCRIPT</title>
+    <link rel="icon" type="image/ico" href="https://www.macan-porsche.com.br/img/favicon.ico">
+
+
+</head>
+
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS</mark>DO HTML</h1>
+    <hr>
+
+
+    <input type="button" onclick="triste();" value="sorrindo">
+    <input type="button" onclick="sorrindo();" value="triste">
+    <img src="img/triste.jpg" id="rosto" style="width: 350px;">
+
+    <script>
+
+        function sorrindo() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "img/sorrindo.jpg";
+        }
+        function triste() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img)
+            tags_img.src = "img/triste.jpg";
+        }
+
+
+    </script>
+</body>
+
+</html>
